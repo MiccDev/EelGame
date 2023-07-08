@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://4xkewoqv7vgl"]
+
+[ext_resource type="PackedScene" uid="uid://c6skkkyb30gcf" path="res://Entities/Player.tscn" id="1_yjbeo"]
+[ext_resource type="PackedScene" uid="uid://bujy0w1ukxvnt" path="res://Entities/FishingLine.tscn" id="2_ww1yr"]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_yjbeo")]
+position = Vector2(125, 79)
+scale = Vector2(2.2, 2.2)
+
+[node name="FishingLine" parent="." instance=ExtResource("2_ww1yr")]
+position = Vector2(-83, 0)
+
+[node name="FishingLine2" parent="." instance=ExtResource("2_ww1yr")]
+position = Vector2(-65, 0)
